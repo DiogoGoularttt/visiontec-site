@@ -1,0 +1,104 @@
+#header {
+  box-sizing: border-box;
+  margin: auto;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000A63;
+  width: 60%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search  {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 80%;
+} 
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 40%;
+  font-size: large;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem; 
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+#menu li a{
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+#menu li a:hover{
+    background-color: white;
+    color: #000A63;
+    transition: all 0.4s;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.cart-login {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.icons-header{
+  font-size: 28px;
+  fill: #fff;
+  cursor: pointer
+}
+
+.social-medias-header a {
+    color: white;
+    cursor: pointer; 
+}
+
+.social-medias-header{
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding: 2em;
+  z-index: 10;
+  gap: 0.7rem;
+}
+
+
+.social-medias-header svg {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0.3rem;
+  border-radius: 9999px;
+}
+
+.social-medias-header svg:hover {
+  color: white;
+  background:  rgba(255, 255, 255, 0.2);
+}
