@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import '../main-slider/main-slider.css'
+import '../MainSlider/main-slider.css'
 
 import Banner1 from '../../img/Banner_1.png';
 import Banner2 from '../../img/Banner_2.png';

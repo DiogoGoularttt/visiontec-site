@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from './components/Header/header';
-import SliderMain from './components/main-slider/main-slider';
+import SliderMain from './components/MainSlider/main-slider';
 import './App.css'
 
 function App() {

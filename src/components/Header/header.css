@@ -24,6 +24,13 @@ a:hover {
   font-weight: bold;
 }
 
+#search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 84%;
+}
+
 .cart-login {
     display: flex;
     align-items: center;
@@ -60,6 +67,7 @@ a:hover {
   font-size: 25px;
   padding: 0.3rem;
   border-radius: 9999px;
+  fill: #fff;
 }
 
 .social-medias-header svg:hover {
