@@ -1,120 +1,100 @@
-#header {
-  box-sizing: border-box;
-  margin: auto;
-  height: 6rem;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.nav-bar {
   display: flex;
-  align-items: center;
+  gap: 1rem;
   justify-content: space-between;
-  background: #000A63;
-  width: 70%;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-family: sans-serif;
-}
-
-a:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-#search {
-  display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 84%;
+  height: 2rem;
+  padding: 2rem;
+  margin: 0 2rem
 }
 
-.cart-login {
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
+.Logo img {
+  width: 80%;
+  max-width: 20rem;
 }
 
-.icons-header{
-  font-size: 28px;
-  fill: #fff;
-  cursor: pointer
-}
-
-#bar-menu{
-  display: none;
-}
-
-.social-medias-header a {
-    color: white;
-    cursor: pointer; 
-}
-
-.social-medias-header{
+.nav-list ul {
   display: flex;
-  position: absolute;
-  right: 0;
-  padding: 2em;
-  z-index: 10;
-  gap: 0.2rem;
+  gap: 4rem;
 }
 
+.nav-item {
+  list-style: none;
+  align-items: center;
+}
 
-.social-medias-header svg {
+.nav-item ul {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #FFF;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 25px;
-  padding: 0.3rem;
-  border-radius: 9999px;
-  fill: #fff;
+  transition: all 0.2s ease;
 }
 
-.social-medias-header svg:hover {
-  color: white;
-  background:  rgba(255, 255, 255, 0.2);
+.nav-link:hover {
+  background: #FFF;
+  border-radius: 5px;
+  color: #000A63;
+  padding: 5px;
 }
 
-
-@media screen and (max-width: 767px) {
-  #header {
-    box-sizing: border-box;
-    margin: auto;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #000A63;
-    width: 90%;
-  }
-
-  #logo {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .cart-login {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.icons-header{
-  font-size: 24px;
-  fill: #fff;
-  cursor: pointer
-}
-
-.icons-header#profile-icon {
-  display: none;
-}
-
-#bar-menu{
+.cart-login-buttons {
   display: flex;
+  gap: 1rem;
 }
 
-.social-medias-header{
+.cart-login-buttons svg {
+  cursor: pointer;
+  fill: #FFF;
+}
+
+.mobile-menu-icon {
   display: none;
 }
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    height: 1.5rem;
+    padding: 1.4rem;
+    margin: 0;
+  }
+  
+  .Logo img {
+    width: 100%;
+    max-width: 14rem;
+
+  }
+  .nav-item {
+    display: none;
+    
+  }
+  .cart-login-buttons {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-menu-icon svg {
+    fill: #FFF;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
 
 }

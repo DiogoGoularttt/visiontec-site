@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 import '../MainSlider/main-slider.css'
 
-import Banner1 from '../../img/Banner_1.png';
-import Banner2 from '../../img/Banner_2.png';
-import Banner3 from '../../img/Banner_3.png';
+import Banner1 from '../../../public/img/1.png';
+import Banner2 from '../../../public/img/2.png';
+import Banner3 from '../../../public/img/3.png';
 
-import Banner1Mobile from '../../img/slide-1-mob.jpg';
-import Banner2Mobile from '../../img/slide-2-mob.jpg';
-import Banner3Mobile from '../../img/slide-3-mob.jpg';
+//  import Banner1Mobile from '../../img/slide-1-.jpg';
+//  import Banner2Mobile from '../../img/slide-2-mob.jpg';
+//  import Banner3Mobile from '../../img/slide-3-mob.jpg';
 
 
 
@@ -44,18 +44,18 @@ const SliderMain = () => {
                 <input type="radio" name="btn-radio" id="radio3" checked={cont === 3} />
 
                 <div className={`slide-box primeiro ${cont === 1 ? 'active' : ''}`}>
-                    <img className="img-desktop" src={Banner1} alt="slide 1" />
-                    <img className="img-mobile" src={Banner1Mobile} alt="slide 1" />
+                    <img className="img-desktop" src={Banner3} alt="slide 1" />
+                    <img className="img-mobile" src={''} alt="slide 1" />
                 </div>
 
                 <div className={`slide-box ${cont === 2 ? 'active' : ''}`}>
-                    <img className="img-desktop" src={Banner2} alt="slide 2" />
-                    <img className="img-mobile" src={Banner2Mobile} alt="slide 2" />
+                    <img className="img-desktop" src={Banner1} alt="slide 2" />
+                    <img className="img-mobile" src={''} alt="slide 2" />
                 </div>
 
                 <div className={`slide-box ${cont === 3 ? 'active' : ''}`}>
-                    <img className="img-desktop" src={Banner3} alt="slide 3" />
-                    <img className="img-mobile" src={Banner3Mobile} alt="slide 3" />
+                    <img className="img-desktop" src={Banner2} alt="slide 3" />
+                    <img className="img-mobile" src={''} alt="slide 3" />
                 </div>
 
                 <div className="nav-auto">
