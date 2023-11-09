@@ -1,7 +1,8 @@
-body,
-ul {
-  font-family: "Lato";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
   background-color: #000A63;
+  font-family: "Montserrat";
   margin: 0px;
   padding: 0px;
 }
