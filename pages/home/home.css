@@ -1,6 +1,19 @@
-.home {
-    background-color: #000A63;
-    font-family: "Montserrat";
-    margin: 0px;
-    padding: 0px;
+.conteudo {
+    width: 100%;
+    max-width: 1400px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    margin: 2rem auto;
+    padding: 0rem ;
 }
+
+.conteudo .teste {
+    padding: 1rem;  
+}
+
+div.teste {
+    border-radius: 10px;
+}
+

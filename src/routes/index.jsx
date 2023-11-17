@@ -17,16 +17,17 @@ const Private = ({ Item }) => {
 
 const RoutesApp = () => {
   return (
-    <BrowserRouter>
-      <Fragment>
-        <Routes>
-          <Route exact path="/home" element={<Private Item={Home} />} />
-          <Route path="/signin" element={< Signin/>} />
-          <Route exact path="/signup" element={<Signup/>} />
-          <Route path="*" element={<Signin />} />
-        </Routes>
-      </Fragment>
-    </BrowserRouter>
+    <Home/>
+    // <BrowserRouter>
+    //   <Fragment>
+    //     <Routes>
+    //       <Route exact path="/home" element={<Private Item={Home} />} />
+    //       <Route path="/signin" element={< Signin/>} />
+    //       <Route exact path="/signup" element={<Signup/>} />
+    //       <Route path="*" element={<Signin />} />
+    //     </Routes>
+    //   </Fragment>
+    // </BrowserRouter>
   )
 }
 
