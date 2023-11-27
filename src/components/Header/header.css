@@ -13,7 +13,7 @@ header .container {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    padding: 0.5rem;
+    padding: 1rem;
 
 }
 
@@ -30,12 +30,19 @@ header .container {
     margin: 0;
 }
 
-.menu ul li a {
+.menu li a {
     color: white;
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
-    
+    padding: 7px;
+    border-radius: 7px;
+    transition: all 0.3s ease; 
+}
+
+.menu li a:hover {
+    background: #FFF;
+    color: #000A63;
 }
 
 .buttons {
@@ -74,4 +81,21 @@ header .container {
     color: #FFF;
 }
 
+.sanduiche-icon {
+    display: none;
+}
 
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+    .buttons {
+        display: none;
+    }
+
+    .sanduiche-icon {
+        display: flex;
+        color: #FFF;
+        font-size: 1.8rem;
+    }
+}
